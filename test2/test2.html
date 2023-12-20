@@ -1,13 +1,25 @@
 <!DOCTYPE html5>
 <html lang="en">
 	<head>
-        <title id="title">TEST 2</title>
-        <meta name="viewport" content="width=device-width" initial-scale="-1"/>
-        <meta charset="UTF-8">
+		<title id="title">TEST 2</title>
+		<meta name="viewport" content="width=device-width" initial-scale="-1" />
+		<meta charset="UTF-8" />
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	</head>
 	<body>
-        text
 		<script src="./js.script.js"></script>
+		<button id="blufor" type="button" onclick="generateBLUFOR()">blufor</button>
+		<br />
+		<button id="opfor" type="button" onclick="gemerateOPFOR()">opfor</button>
+        <br />
+		<button id="indep" type="button" onclick="generateCIVILIAN()">civilian</button>
+        <br />
+		<button id="civilian" type="button" onclick="generateCIVILIAN()">independent</button>
+        <br />
+        <!-- these 4(5?) buttons are permanent, they show the sides to choose from
+            next, new buttons have to appear when the buttons are clicked, by using the generate functions
+            possibly use a generate class that first wipes buttons, then call subfunction to generate necessary buttons
+            css can probs be used to make it look as intended
+        -->
 	</body>
 </html>
