@@ -24,7 +24,23 @@ console.log(jsonTemplate["BLUFOR"])
 
 below function removes the old buttons and replaces them with the buttons for the factions from chosen side
 */
+
+let path = "./assets/test.json"
+
+function parseJson (path, task) {
+    fetch(path).then((response) => response.json()).then((json) => console.log(json));
+    // parse json, return: list of factions list of eras, content of motorpool for era
+
+}
 function generateFactions(input) {
+    let factions = input;
+    for(let i = 0; i < factions.length; i++) {
+        // create faction button here
+        let faction = document.createElement("button")
+        
+    }
+
+
 	let div = document.getElementById("Factions");
     // hide and empty out the divs of factions and eras
     // extract faction list from json, create buttons for every faction and add it to the factions div, show factions div
@@ -74,4 +90,5 @@ function calculate () {
     this;
 }
 
+parseJson(path, "this")
 addNumberInput("input", "10", "results");
