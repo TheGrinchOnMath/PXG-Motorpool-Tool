@@ -1,4 +1,4 @@
-<!DOCTYPE html5>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title id="title">TEST 2</title>
@@ -7,19 +7,58 @@
 		<link rel="stylesheet" type="text/css" href="./css/style.css" />
 	</head>
 	<body>
-		<script src="./js.script.js"></script>
-		<button id="blufor" type="button" onclick="generateBLUFOR()">blufor</button>
-		<br />
-		<button id="opfor" type="button" onclick="gemerateOPFOR()">opfor</button>
-        <br />
-		<button id="indep" type="button" onclick="generateCIVILIAN()">civilian</button>
-        <br />
-		<button id="civilian" type="button" onclick="generateCIVILIAN()">independent</button>
-        <br />
-        <!-- these 4(5?) buttons are permanent, they show the sides to choose from
+		<div id="Sides">
+			<button id="blufor" type="button" onclick="generateFactions('BLUFOR')">
+				blufor
+			</button>
+			<br />
+			<button id="opfor" type="button" onclick="generateFactions('OPFOR')">
+				opfor
+			</button>
+			<br />
+			<button id="indep" type="button" onclick="generateFactions('INDEP')">
+				independent
+			</button>
+			<br />
+			<button
+				id="civilian"
+				type="button"
+				onclick="generateFactions('CIVILIAN')"
+			>
+				civilian
+			</button>
+			<br />
+			<!-- these 4(5?) buttons are permanent, they show the sides to choose from
             next, new buttons have to appear when the buttons are clicked, by using the generate functions
             possibly use a generate class that first wipes buttons, then call subfunction to generate necessary buttons
             css can probs be used to make it look as intended
         -->
+		</div>
+		<div id="Factions">
+			<p>factions</p>
+			<!--
+				this div contains the faction buttons
+			-->
+		</div>
+		<div id="Eras">
+			<p>eras</p>
+			<!--
+				this div contains the eras buttons
+			-->
+		</div>
+		<div id="content">
+			<p>content</p>
+			<!--
+				this div contains the motorpool contents
+			-->
+		</div>
+		<div id="results">
+			<p>results</p>
+			<!--
+				this div contains the sum of seats, personnel, cargo, ...
+			-->
+		</div>
+		<script src="./js/script.js"></script>
+		<!--NOTE: script will only know about the existence of elements if it is called after them in the html-->
 	</body>
 </html>

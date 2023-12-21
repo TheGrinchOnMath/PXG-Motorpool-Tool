@@ -9,5 +9,18 @@ total width of menus and spacing and vehicle displays should not exceed certain 
 back to top button
 calculate button at top and bottom, moves the viewport to the part of the site where the results are displayed
 
-BUTTONS:
-when a button is clicked, if it is a side or a faction, build the submenu and show the b
+### BUTTONS:
+when a side button is clicked, remove factions, eras and show side factions
+when a faction button is clicked, show eras
+when an era button is clicked, show motorpool stats, number input for the amount of vehicles
+
+add a listener to the inputs, tied to a function that adds the stats of the vehicles, and shows the necessary crew
+
+
+### CSS:
+the flexbox in the css puts side div, faction div, era div and content div next to each other
+flexbox 1: contains the divs for the sides, factions and eras, as well as the div that contains the entire motorpool
+flexbox 2: contains the divs for a vehicle, containing the image, the data and the number input
+
+
+
